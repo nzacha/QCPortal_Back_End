@@ -1,13 +1,11 @@
 const express = require('express')
 const router = express.Router()
-const researcherController = require('../controllers/researcherController')
+const administratorController = require('../controllers/administratorController')
 
-/*
-router.get('/', researcherController.getResearchers)
-router.get('/:id', researcherController.getResearcher)
-router.post('/', researcherController.addResearcher)
-router.delete('/:id', researcherController.removeResearcher)
-router.patch('/:id', researcherController.updateResearcher)
-*/
+router.get('/', administratorController.getAdministrators)
+router.get('/:id', administratorController.getAdministrator)
+router.post('/', administratorController.addAdministrator)
+router.delete('/:id', administratorController.removeAdministrator)
+router.patch('/:id', administratorController.updateAdministrator)
 
 module.exports = router

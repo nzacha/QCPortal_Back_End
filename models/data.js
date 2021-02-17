@@ -8,11 +8,15 @@ module.exports = (sequelize) => {
             primaryKey: true,
             autoIncrement: true
         },
-        text: {
-            type: Sequelize.STRING,
+        week:{
+            type: Sequelize.INTEGER,
             allowNull: false
         },
-        index: {
+        single:{
+            type: Sequelize.INTEGER,
+            allowNull: false
+        },
+        accumulated: {
             type: Sequelize.INTEGER,
             allowNull: false
         }

@@ -1,12 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const answersController = require('../controllers/answersController')
+const dataController = require('../controllers/dataController')
 
-/*
-router.get('/', answersController.getAllAnswers)
-router.get('/:code/:projectId', answersController.getAnswersOf)
-router.post('/:questionId/:userId', answersController.addAnswer)
-router.delete('/:id', answersController.removeAnswer)
-*/
+router.get('/', dataController.getAllData)
+router.get('/project/:projectId', dataController.getDataOfProject)
+//router.get('/category/:categoryId', dataController.getDataOfCategory)
+//router.get('/discipline/:disciplineId', dataController.getDataOfDiscipline)
+//router.post('/create?projectId&disciplineId', dataController.addData)
+router.post('/:projectId/:disciplineId', dataController.addData)
+router.delete('/:id', dataController.removeData)
 
 module.exports = router

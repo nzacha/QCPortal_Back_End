@@ -10,10 +10,15 @@ module.exports = (sequelize) => {
         },
         name: {
             type: Sequelize.STRING,
+            unique: true,
             allowNull: false
         },
         description: {
             type: Sequelize.TEXT
+        },
+        date:{
+            type: Sequelize.DATEONLY,
+            allowNull: false
         }
     }, {
         sequelize,

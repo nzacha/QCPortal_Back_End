@@ -19,11 +19,11 @@ module.exports = (sequelize) => {
         },
         name: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: false
         },
         surname: {
             type: Sequelize.STRING,
-            allowNull: true
+            allowNull: false
         }
     }, {
         sequelize,

@@ -1,6 +1,6 @@
-export DB_USER=qcAdmin
+export DB_USER=qcadmin
 export DB_HOST=localhost
-export DB_NAME=qcPortal
+export DB_NAME=qcportal
 
 export DB_PASSWORD='gezac8964'
 //export DB_PASSWORD='password'

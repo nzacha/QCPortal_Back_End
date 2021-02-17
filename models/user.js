@@ -9,11 +9,19 @@ module.exports = (sequelize) => {
             autoIncrement: true
         },
         username: {            
-            type: Sequelize.STRING
-        },
-        password: {
             type: Sequelize.STRING,
             unique: true
+        },
+        name: {            
+            type: Sequelize.STRING,
+            allowNull: true
+        },
+        surname: {            
+            type: Sequelize.STRING,
+            allowNull: true
+        },
+        password: {
+            type: Sequelize.STRING
         },
         isSuper: {
         	type: Sequelize.BOOLEAN,
